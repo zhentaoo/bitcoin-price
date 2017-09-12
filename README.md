@@ -9,3 +9,16 @@
 
 ## 如何写一个chrome插件
 首先可以看360翻译的文档，上面有大量的demo，http://open.chrome.360.cn/extension_dev/background_pages.html
+
+## 重要API解读
+#### Browser Actions
+可以定义应用的图标、name、气泡html
+
+#### permissions
+定义该应用可以访问的域、资源
+
+#### background_scripts
+在插件启动时，就会执行该脚本，不需要HTML文件，例：background.js
+
+#### content_scripts
+在match到的页面下，会执行该脚本，例：content.js会在http://www.zhentaoo.com/*下执行
