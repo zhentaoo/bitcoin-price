@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://www.jubi.com/coin/trends')
       .then(res => res.json())
       .then(res => {
-        btc.innerHTML = res.btc.yprice.toFixed(2)
-        bcc.innerHTML = res.bcc.yprice.toFixed(2)
-        eth.innerHTML = res.eth.yprice.toFixed(2)
+        btc.innerHTML = res.btc.data[res.btc.data.length - 1][1].toFixed(2)
+        bcc.innerHTML = res.bcc.data[res.btc.data.length - 1][1].toFixed(2)
+        eth.innerHTML = res.eth.data[res.btc.data.length - 1][1].toFixed(2)
       })
       .catch(res => {
         btc.innerHTML = '--'
