@@ -1,0 +1,25 @@
+{
+    "name": "Bitcoin Price",
+    "description": "update bitcoin price every ten minutes",
+    "version": "1.0",
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ],
+    "browser_action": {
+        "default_title": "Bitcoin Price",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["https://www.baidu.com/*"],
+        "css": ["style.css"],
+        "js": ["content.js"]
+    }],
+    "chrome_url_overrides" : {
+      "newtab": "replace.html"
+    },
+    "manifest_version": 2
+}

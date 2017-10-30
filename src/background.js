@@ -1,10 +1,14 @@
-// 在应用启动时，执行该脚本，背景页不需要HTML
+// 广告删除
+chrome.tabs.onActivated.addListener(function (tab) {
+    chrome.tabs.executeScript(null, {code: `
+      function clearAD() {
+        console.log(222)
+        document.querySelectorAll('.slides').forEach(el => el.style.display = 'none')
+      }
+      clearAD()
 
-// "background": {
-//     "scripts": ["background.js"]
-//  }
-
-
-setInterval(function() {
-  // alert(1211)
-}, 1000 * 3);
+      setTimeout(function () {
+        clearAD()
+      }, 1500);
+    `});
+})
