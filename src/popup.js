@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-
   function getAllPriceInfo() {
     var body = document.querySelector('body')
     // body.innerHTML = Math.random()
-
     var btc = document.querySelector('#btc')
     var eth = document.querySelector('#eth')
     var bcc = document.querySelector('#bcc')
@@ -48,6 +46,5 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   getAllPriceInfo();
-  setInterval(getAllPriceInfo, 1000 * 20);
-
+  setInterval(getAllPriceInfo, 1000 * 60 * 30);
 });

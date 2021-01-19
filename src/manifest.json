@@ -14,7 +14,7 @@
         "scripts": ["background.js"]
     },
     "content_scripts": [{
-        "matches": ["https://www.baidu.com/*"],
+        "matches": ["http://*/*", "https://*/*"],
         "css": ["style.css"],
         "js": ["content.js"]
     }],
