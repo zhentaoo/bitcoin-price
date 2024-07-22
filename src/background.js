@@ -19,3 +19,8 @@ chrome.tabs.onCreated.addListener(function (tab) {
 chrome.tabs.onUpdated.addListener(function (tab) {
   chrome.tabs.sendMessage(tab, 'onUpdated')
 });
+
+
+setInterval(() => {
+  console.log('back js running');
+}, 1000*3);

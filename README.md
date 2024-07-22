@@ -18,7 +18,7 @@
 
 360 翻译：http://open.chrome.360.cn/extension_dev/background_pages.html
 
-### 概诉
+### 概述
 
 一个 Chrome 插件，其实是压缩在一起的一组文件，包括 HTML，CSS，Javascript 脚本，图片文件，还有其它任何需要的文件。插件本质上来说就是 web 页面，它们可以使用所有的浏览器提供的 API，从 XMLHttpRequest 到 JSON 到 HTML5 全都有。
 
@@ -46,3 +46,13 @@ manifest.json 是插件的主要配置文件，包含了插件权限、插件弹
 一个 browser action 可以包含一个弹窗(popup)，而弹窗就是用 html 页面实现的。应用（扩展）还可以使用 chrome.tabs.create()或者 window.open()来显示内部的 HTML 文件。
 
 应用（扩展）里面的 HTML 页面可以互相访问各自 DOM 树中的全部元素，或者互相调用其中的函数。
+
+### 架构图
+![./doc/666.png](./doc/.png)
+
+
+### 调试技巧
+![./doc/1.png](./doc/1.png)
+![./doc/1.png](./doc/2.png)
+![./doc/1.png](./doc/3.png)
+
