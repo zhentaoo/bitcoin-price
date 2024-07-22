@@ -47,12 +47,18 @@ manifest.json 是插件的主要配置文件，包含了插件权限、插件弹
 
 应用（扩展）里面的 HTML 页面可以互相访问各自 DOM 树中的全部元素，或者互相调用其中的函数。
 
-### 架构图
-![./doc/666.png](./doc/.png)
+### Structure
+![./doc/666.png](./doc/666.png)
 
 
-### 调试技巧
+### Debug Skills
+
+#### debug background js
 ![./doc/1.png](./doc/1.png)
-![./doc/1.png](./doc/2.png)
-![./doc/1.png](./doc/3.png)
+
+#### debug content.js
+![./doc/2.png](./doc/2.png)
+
+#### debug popup html
+![./doc/3.png](./doc/3.png)
 
