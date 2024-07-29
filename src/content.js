@@ -33,6 +33,20 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   // sendResponse('我收到了你的消息！');
 });
 
+
+// 
+const port = chrome.runtime.connect({name: '1112200-abc'})
+
+// 监听来自后台脚本的消息
+port.onMessage.addListener((message) => {
+  console.log('Received response:', message);
+});
+
+// 发送消息到后台脚本
+port.postMessage({ greeting: 'Hello from content script btc' });
+
+
+
 function clearAds() {
   document
     .querySelectorAll(".ads")
