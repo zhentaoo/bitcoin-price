@@ -2,7 +2,7 @@
  * 相当于在
  * 
  */
-console.log('background js run');
+console.log('btccc, background js run');
 
 chrome.tabs.onActivated.addListener(function (tab, changeInfo, changeInfo) {
   chrome.tabs.sendMessage(tab.tabId, 'onActivated')
@@ -22,5 +22,5 @@ chrome.tabs.onUpdated.addListener(function (tab) {
 
 
 setInterval(() => {
-  console.log('back js running');
+  console.log('bitccc, back js running');
 }, 1000*3);
